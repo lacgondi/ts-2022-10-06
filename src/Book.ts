@@ -1,4 +1,4 @@
-class Book {
+export class Book {
     #name:string;
     #rating:number;
     constructor(name:string, rating:number) {
@@ -34,5 +34,8 @@ class Book {
             this.#rating=v;
         }
     }
-    
+
+    public toString():string {
+        return this.#name+" - "+this.#rating;   
+    }
 }
