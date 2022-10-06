@@ -36,6 +36,6 @@ export class Book {
     }
 
     public toString():string {
-        return this.#name+" - "+this.#rating;   
+        return this.#name+" - "+this.#rating+"/10";   
     }
 }
